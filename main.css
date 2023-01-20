@@ -1,91 +1,37 @@
-@keyframes moveIn {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem); }
-  80% {
-    transform: translateX(2rem); }
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
 
-@keyframes moveRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem); }
-  80% {
-    transform: translateX(-2rem); }
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
-
-@keyframes moveInButton {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-html {
-  font-size: 62.5%; }
+* {
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
 
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  box-sizing: border-box;
-  line-height: 1.7;
-  color: #777;
-  padding: 3rem; }
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
 
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  border-radius: 10rem;
-  transition: all 2s;
-  position: relative;
-  font-size: 1.6rem; }
+h1 {
+position: absolute;
+top: 10%;
+font-size: 40px;
+}
 
-.btn-white {
-  color: #777;
-  background-color: white; }
-
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
-
-.btn:active {
-  transform: translateY(-0.2rem);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
-
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s; }
-
-.btn-white::after {
-  background-color: #fff; }
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.5);
-  opacity: 0; }
-
-.btn-animated {
-  animation: moveInButton 0.5s ease-out 0.75s;
-  animation-fill-mode: backwards; }
+.box {
+width: 500px;
+height: 50px;
+border-radius: 30px;
+display: flex;
+align-items: center;
+padding: 20px;
+}
+.box>input {
+flex: 1;
+height: 40px;
+outline: none;
+font-size: 18px;
+padding: 10px 15px;
+border:2px solid rgb(204, 206, 209);
+border-radius:20px;
+}
